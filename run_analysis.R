@@ -55,3 +55,6 @@ data_subjects_mean <- data %>%
   arrange(subject, activity)
 
 head(data_subjects_mean)
+
+#Export data
+write.table(data_subjects_mean, "FinalData.txt", row.name=FALSE)
